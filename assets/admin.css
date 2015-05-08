@@ -1,0 +1,57 @@
+#wp-admin-bar-curtain b {
+	font-weight: 700;
+}
+
+#wp-admin-bar-curtain .ab-icon {
+	margin-right: 0 !important;
+}
+
+#wp-admin-bar-curtain .ab-icon:before {
+	top: 2px;
+	content: "\f308";
+}
+
+#wp-admin-bar-curtain.on .ab-icon:before {
+	opacity: 10;
+}
+
+#wp-admin-bar-curtain.off .ab-icon:before {
+	opacity: 0.3;
+}
+
+#wp-admin-bar-curtain.off:hover .ab-icon:before {
+	opacity: 10;
+}
+
+.curtain textarea {
+	resize: none !important;
+	height: 6em;
+}
+
+.curtain label[for="description"] .color {
+	border: 1px solid currentColor;
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	background: white;
+	border-radius: 100%;
+	margin-left: 5px;
+	box-sizing: padding-box;
+}
+
+.curtain select[multiple] {
+	min-width: 220px;
+}
+
+.curtain .submit .reset {
+	margin-left: 15px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.6s;
+	-webkit-transition: opacity 0.6s;
+}
+
+.curtain .submit .reset.show {
+	visibility: visible;
+	opacity: 10;
+}
